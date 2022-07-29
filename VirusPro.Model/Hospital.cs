@@ -9,8 +9,11 @@ namespace VirusPro.Model
 {
     public enum HospitalLevelEnum
     {
-        Class1,
-        Class2,
+        [Display(Name = "一级医院")]
+        Class1, 
+        [Display(Name = "二级医院")]
+        Class2, 
+        [Display(Name = "三级医院")]
         Class3
     }
     class Hospital
@@ -24,7 +27,9 @@ namespace VirusPro.Model
         /*
          * Hostpital表中的属性Location为外键，参考自City表中CityName(一个city有多个hospital)
          */
+        [Display(Name = "医院地点")]
         public City Location { get; set; }
+        [Display(Name = "医院地点")]
         public Guid LocationId { get; set; }
 
         
