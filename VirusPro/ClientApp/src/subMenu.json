@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "ParentId": null,
     "Id": "301f84d3-5a77-4b30-92c4-9c723ed2935a",
@@ -47,4 +47,46 @@
     "Text": "frameworktenant",
     "Url": "/frameworktenant"
   }
+,{
+    "Id": "159ce1e8-99ad-4df3-b38e-c537394bc95d",
+    "ParentId": null,
+    "Text": "病毒库管理",
+    "Url": "/virus"
+    }
+,{
+    "Id": "a654cd71-b786-4a65-a6d9-0c0d64b36706",
+    "ParentId": null,
+    "Text": "病例管理",
+    "Url": "/patient"
+    }
+,{
+    "Id": "33127a3d-ab9f-418a-b663-36b66f346594",
+    "ParentId": null,
+    "Text": "医院管理",
+    "Url": "/hospital"
+    }
+,{
+    "Id": "ef93809b-cee6-45a4-9d75-d7da7c308c65",
+    "ParentId": null,
+    "Text": "疾控中心",
+    "Url": "/controlcenter"
+    }
+,{
+    "Id": "53a13dcb-6ee0-43c2-8705-cc1439c212fb",
+    "ParentId": null,
+    "Text": "病例报告管理",
+    "Url": "/report"
+    }
+,{
+    "Id": "36ccf2ac-08c3-411b-95d3-2418c6f2717e",
+    "ParentId": null,
+    "Text": "城市管理",
+    "Url": "/city"
+    }
+
+
+
+
+
+
 ]

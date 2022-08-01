@@ -13,6 +13,11 @@ namespace VirusPro.DataAccess
          * 注册Virus类为表
          */
         public DbSet<Virus> Viruses { get; set; }
+        public DbSet<Hospital> Hospital { get; set; }
+        public DbSet<City> City { get; set; }
+        public DbSet<Patient> Patient { get; set; }
+        public DbSet<Report> Report { get; set; }
+        public DbSet<ControlCenter> ControlCenter { get; set; }
         public DbSet<FrameworkUser> FrameworkUsers { get; set; }
 
 

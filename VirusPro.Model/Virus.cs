@@ -30,5 +30,8 @@ namespace VirusPro.Model
         [Required(ErrorMessage = "病毒种类是必填项")]
         public VirusTypeEnum VirusType { get; set; }
 
+        //一个病毒能感染多个病人，指向中间表
+        [Display(Name= "患者")]
+        public List<PatientVirus> Patients { get; set; }
     }
 }

@@ -22,11 +22,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="ClientApp\dist\**" />
+    <Compile Remove="ClientApp\src\pages\virus\**" />
     <Content Remove="$(SpaRoot)**" />
     <Content Remove="ClientApp\dist\**" />
+    <Content Remove="ClientApp\src\pages\virus\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**;$(SpaRoot)dist\**;$(SpaRoot)dist\**;$(SpaRoot).awcache\**;$(SpaRoot).cache-loader\**" />
     <EmbeddedResource Remove="ClientApp\dist\**" />
+    <EmbeddedResource Remove="ClientApp\src\pages\virus\**" />
     <None Remove="ClientApp\dist\**" />
+    <None Remove="ClientApp\src\pages\virus\**" />
     <None Remove="ClientApp\package-lock.json" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
@@ -67,7 +71,11 @@
    <ProjectReference Include="..\VirusPro.Model\VirusPro.Model.csproj" />
     <ProjectReference Include="..\VirusPro.DataAccess\VirusPro.DataAccess.csproj" />
     <ProjectReference Include="..\VirusPro.ViewModel\VirusPro.ViewModel.csproj" />
- </ItemGroup >
+ </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
 </Project>
 
 
